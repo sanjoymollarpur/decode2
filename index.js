@@ -42,12 +42,12 @@ function first(e){
     if((b>='a' &&  b<='z') && (d>='a' &&  d<='z') && (d>='a' &&  d<='z') && b!=="" && c!=="" && d!=="" && c.length==1 && b.length==1 && d.length==1)
     {
         const p1= document.getElementById('p1');
-        p1.innerText=`You won\nYour calculative number = ${(a[b]*(a[c]+3)*(a[d]+1)*1009)%1000} equal 865\n  Calculation:\n Enter elements are  \n ${b}, ${c}, ${d} \nCorresponding numbers are \n ${a[b]}, ${a[c]}, ${a[d]}. \n Second operation -\n add 1 with 2nd number and add 3 with 3rd number 
-        ${a[b]}, ${a[c]}+1 = ${a[c]+1}, ${a[d]}+3= ${a[d]+3}\n Third operation - \n Multiply all the numbers together\n ${a[b]}X${a[c]+1}X${a[d]+3}= ${a[b]*(a[c]+3)*(a[d]+1)}
-        Fourth operation - \n Multiply ${a[b]*(a[c]+3)*(a[d]+1)} by 1009\n ${a[b]*(a[c]+3)*(a[d]+1)}X1009=${a[b]*(a[c]+3)*(a[d]+1)*1009}\n Fifth Operation - \n Choose last three digit of ${a[b]*(a[c]+3)*(a[d]+1)*1009}\n  Final Number = ${(a[b]*(a[c]+3)*(a[d]+1)*1009)%1000}`
+        p1.innerText=`You won\nYour calculative number = ${(a[b]*(a[c]+1)*(a[d]+3)*1009)%1000} equal 129\n  Calculation:\n Enter elements are  \n ${b}, ${c}, ${d} \nCorresponding numbers are \n ${a[b]}, ${a[c]}, ${a[d]}. \n Second operation -\n add 1 with 2nd number and add 3 with 3rd number 
+        ${a[b]}, ${a[c]}+1 = ${a[c]+1}, ${a[d]}+3= ${a[d]+3}\n Third operation - \n Multiply all the numbers together\n ${a[b]}X${a[c]+1}X${a[d]+3}= ${a[b]*(a[c]+1)*(a[d]+3)}
+        Fourth operation - \n Multiply ${a[b]*(a[c]+1)*(a[d]+3)} by 1009\n ${a[b]*(a[c]+3)*(a[d]+1)}X1009=${a[b]*(a[c]+1)*(a[d]+3)*1009}\n Fifth Operation - \n Choose last three digit of ${a[b]*(a[c]+1)*(a[d]+3)*1009}\n  Final Number = ${(a[b]*(a[c]+1)*(a[d]+3)*1009)%1000}`
         
-        const fn=(a[b]*(a[c]+3)*(a[d]+1)*1009)%1000
-        if(fn == 865)
+        const fn=(a[b]*(a[c]+1)*(a[d]+3)*1009)%1000
+        if(fn == 129)
         {
             mp3.play()
 
@@ -56,9 +56,9 @@ function first(e){
             mp31.play()
            // p1.innerText=`Sorry you loss. To play again refresh or re-enter clicking the link`
            const p1= document.getElementById('p1');
-        p1.innerText=`Your calculative number = ${(a[b]*(a[c]+3)*(a[d]+1)*1009)%1000}\n Calculation:\n Enter element are\n ${b}, ${c}, ${d} \nCorresponding numbers are \n ${a[b]}, ${a[c]}, ${a[d]}. \n Second operation -\n add 1 with 2nd number and add 3 with 3rd number 
-        ${a[b]}, ${a[c]}+1 = ${a[c]+1}, ${a[d]}+3= ${a[d]+3}\n Third operation - \n Multiply all the numbers together\n ${a[b]}X${a[c]+1}X${a[d]+3}= ${a[b]*(a[c]+3)*(a[d]+1)}
-        Fourth operation - \n Multiply ${a[b]*(a[c]+3)*(a[d]+1)} by 1009\n ${a[b]*(a[c]+3)*(a[d]+1)}X1009=${a[b]*(a[c]+3)*(a[d]+1)*1009}\n Fifth Operation - \n Choose last three digit of ${a[b]*(a[c]+3)*(a[d]+1)*1009}\n  Final Number = ${(a[b]*(a[c]+3)*(a[d]+1)*1009)%1000}`
+        p1.innerText=`Your calculative number = ${(a[b]*(a[c]+1)*(a[d]+3)*1009)%1000}\n Calculation:\n Enter element are\n ${b}, ${c}, ${d} \nCorresponding numbers are \n ${a[b]}, ${a[c]}, ${a[d]}. \n Second operation -\n add 1 with 2nd number and add 3 with 3rd number 
+        ${a[b]}, ${a[c]}+1 = ${a[c]+1}, ${a[d]}+3= ${a[d]+3}\n Third operation - \n Multiply all the numbers together\n ${a[b]}X${a[c]+1}X${a[d]+3}= ${a[b]*(a[c]+1)*(a[d]+3)}
+        Fourth operation - \n Multiply ${a[b]*(a[c]+1)*(a[d]+3)} by 1009\n ${a[b]*(a[c]+1)*(a[d]+3)}X1009=${a[b]*(a[c]+1)*(a[d]+3)*1009}\n Fifth Operation - \n Choose last three digit of ${a[b]*(a[c]+1)*(a[d]+3)*1009}\n  Final Number = ${(a[b]*(a[c]+1)*(a[d]+3)*1009)%1000}`
          
         }
         console.log("ok", fn);
